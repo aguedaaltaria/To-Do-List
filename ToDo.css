@@ -1,0 +1,139 @@
+:root {
+    --principal: #5b995b;
+    --claroPrincipal: #7acc7a;
+    --masClaroPrincipal: #99ff99;
+    --gris: #55557b;
+    --blanco: #fff;
+    --borrar: rgba(253, 109, 109, 0.767);
+    --borrarUno: rgba(255, 255, 0, 0.842);
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--principal);
+}
+
+h1 {
+    text-align: center;
+    color: var(--blanco);
+    margin-top: 80px;
+    font-size: 2.2rem;
+}
+
+header {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+form {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+form input[type="text"] {
+    background-color: var(--principal);
+    color: var(--blanco);
+    border-style: none;
+    font-size: 1.5rem;
+    width: 400px;
+}
+
+form input[type="text"]:focus {
+    outline: none;
+} 
+
+form input[type="submit"] {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    font-size: 2rem;
+    color: var(--principal);
+    align-items: center;
+    padding: auto auto;
+}
+
+form input[type="submit"]:hover {
+    background-color: var(--masClaroPrincipal);
+    cursor: pointer;
+    color: var(--blanco);
+}
+
+#borrarTodo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    font-size: 2rem;
+    color: var(--principal);
+    align-items: center;
+    padding: auto auto;
+    margin: 1rem 0.5rem 1rem 0;
+}
+
+#borrarTodo:hover {
+    background-color: var(--borrar);
+    cursor: pointer;
+    color: var(--blanco);
+}
+
+#borrarUno {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border-style: none;
+    font-size: 2rem;
+    color: var(--principal);
+    align-items: center;
+    padding: auto auto;
+    margin: 1rem 0.5rem;
+    padding-bottom: 10px;
+}
+
+#borrarUno:hover {
+    background-color: var(--borrarUno);
+    cursor: pointer;
+    color: var(--blanco);
+}
+
+.list {
+    width: 500px;
+    margin: 3rem auto 0;
+    /* text-align: center; */
+}
+
+.tarea {
+    background-color: var(--blanco);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 6px;
+    padding: 1.4rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.tarea span {
+    padding-left: 0.6rem;
+}
+
+.closeBtn {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.closeBtn:hover {
+    cursor: pointer;
+}
+
+.stats {
+    margin-top: 25px;
+    color: rgba(255, 255, 255, 0.521);
+    text-align: center;
+}
