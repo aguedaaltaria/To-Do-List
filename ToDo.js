@@ -15,7 +15,7 @@ function addTarea() {
     list.innerHTML += `
     <div class="tarea" id="${IDCounter}">
         <label>
-            <input type="checkbox"/>
+            <input class="check" type="checkbox"/>
                 <span>${valueInput}</span>
             </label>
         <img src="delete.png" class="closeBtn">
@@ -40,7 +40,7 @@ function actualizar() {
 
     let check = 0;
     let uncheck = 0;
-    let total = tareas.length - borrar.length;
+    let total = tareas.length;
 
     uso.forEach((a) => {
         if (a.checked) {
@@ -69,13 +69,11 @@ function borrarUno() {
     let tareas = document.querySelectorAll('.tarea');
 
     for (let i = 0; i < tareas.length; i++) {
-        let uso = tareas[i].querySelector('input[type="checkbox"]');
+        let uso = tareas[i].querySelector('input[type="checkbox"');
 
         if (uso.checked) {
-            tareas[i].setAttribute('data-role', 'descripcion');
-            actualizar();
-            tareas[i].style.backgroundColor = 'transparent';
-            tareas[i].style.display = 'none';
+            list.removeChild(tareas[i]);
+            actualizar()
         }
     }
 };
