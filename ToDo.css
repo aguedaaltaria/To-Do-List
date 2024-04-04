@@ -1,7 +1,7 @@
 :root {
     --principal: #5b995b;
     --claroPrincipal: #7acc7a;
-    --masClaroPrincipal: #99ff99;
+    --masClaroPrincipal: #7acc7a;
     --gris: #55557b;
     --blanco: #fff;
     --borrar: rgba(253, 109, 109, 0.767);
@@ -133,7 +133,8 @@ form input[type="submit"]:hover {
 }
 
 .stats {
-    margin-top: 25px;
+    margin: 25px 0;
+
     color: rgba(255, 255, 255, 0.521);
     text-align: center;
 }
